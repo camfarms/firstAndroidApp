@@ -7,12 +7,21 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OOOOOOOOOIIIIIIIIIIIIIIIIII"
+        android:text="@+id/message"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What button do?"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="60dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
